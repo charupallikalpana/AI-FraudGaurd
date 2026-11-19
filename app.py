@@ -99,7 +99,7 @@ def metric_card(label, value, foot="Dataset overview"):
 def header(title, subtitle):
     # Render an actual HTML template inside Streamlit for each page header.
     template_map = {
-        "Intelligence Fraud Detection Dashboard": "dashboard.html",
+        "Intelligent Fraud Detection Dashboard": "dashboard.html",
         "AI Transaction Scanner": "fraud_detection.html",
         "Transaction Explorer": "transactions.html",
         "Model Performance Lab": "analytics.html",
@@ -168,7 +168,7 @@ with st.sidebar:
     st.markdown("<span class='tag'>● Models trained</span>", unsafe_allow_html=True)
 
 if page == "Dashboard":
-    header("Intelligence Fraud Detection Dashboard", "A quick view of transaction patterns, risk signals and model readiness.")
+    header("Intelligent Fraud Detection Dashboard", "A quick view of transaction patterns, risk signals and model readiness.")
     st.write("")
     c1,c2,c3,c4 = st.columns(4)
     with c1: metric_card("Total Transactions", f"{len(data):,}")
